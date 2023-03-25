@@ -65,5 +65,40 @@ hadoop fs -cat /output/part-000000
 
 <img width="768" alt="Screenshot 2023-03-25 at 12 02 51 PM" src="https://user-images.githubusercontent.com/43849911/227701081-88a94d1f-d5ed-4911-b2ac-e58a99190ea4.png">
 
+```
+hdfs dfs -cat /input/input.txt         
+2023-03-25 12:11:47,547 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent egestas dui vel pharetra 
+volutpat. Morbi suscipit sapien vitae commodo sagittis. Donec gravida efficitur sagittis. 
+Nunc feugiat, magna eu ultrices placerat, justo augue iaculis mi, ut facilisis ex ex et 
+libero. Phasellus diam est, tincidunt vel lorem ultrices, lacinia faucibus arcu. Mauris in 
+laoreet neque. Morbi justo ante, rutrum a pharetra ac, pellentesque non enim. Cras accumsan 
+ultricies dui. Quisque at ligula tellus. Donec eget quam in velit interdum vulputate. 
+Integer nec ipsum vitae eros vulputate maximus sit amet id magna. Morbi sagittis, dui 
+hendrerit congue varius, ante ex tristique ligula, eget fringilla est est sed justo. Nam 
+pharetra diam a ante fringilla, in egestas orci dictum. Orci varius natoque penatibus et 
+magnis dis parturient montes, nascetur ridiculus mus.
 
+Phasellus sed nulla urna. Aliquam ac tincidunt massa. Nunc consequat accumsan consequat. 
+Fusce nec dapibus dolor. Vivamus venenatis dapibus augue a hendrerit. Maecenas orci nisl, 
+blandit a metus sed, faucibus ultrices ante. Fusce et rutrum leo.
 
+Pellentesque maximus rutrum augue, vel vestibulum sem accumsan ut. Duis ligula justo, 
+feugiat sit amet dapibus eu, sollicitudin quis enim. Donec ac laoreet turpis, sit amet 
+porta nunc. Praesent posuere, dui ut fringilla mattis, ex massa dignissim massa, a semper 
+magna leo ac nibh. Cras pharetra, augue at suscipit semper, erat sapien luctus libero, 
+vitae vestibulum dui metus sit amet urna. Phasellus elementum scelerisque turpis, sit amet 
+interdum urna dapibus ut. Morbi libero dui, ullamcorper sed erat ac, maximus commodo 
+tortor. Nullam imperdiet mattis lectus sed aliquam. Aliquam erat volutpat. Pellentesque non 
+mauris in sem euismod auctor. Duis accumsan facilisis lacus. Cras dictum est ut nisl 
+pellentesque varius. Nullam vitae justo eget lorem scelerisque consectetur.
+
+hdfs dfs -checksum /input/input.txt
+2023-03-25 12:12:17,947 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+/input/input.txt	MD5-of-0MD5-of-512CRC32C	0000020000000000000000004b6394ce8ece871ab563a260a1f55a67
+```
+
+Installation
+https://www.youtube.com/watch?v=H999fIuymqc
+
+<img width="651" alt="Screenshot 2023-03-25 at 12 24 42 PM" src="https://user-images.githubusercontent.com/43849911/227701988-7d45aa78-c2be-4b2b-952e-b543e66e2050.png">
