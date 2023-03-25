@@ -38,13 +38,13 @@ https://towardsdatascience.com/installing-hadoop-on-a-mac-ec01c67b003c
 
 ```
 jps
-12032 ResourceManager
 10177 
-16114 DataNode
 563 jenkins.war
-16006 NameNode
-22647 Jps
-22574 NodeManager
+24901 DataNode
+26038 NodeManager
+26109 Jps
+24799 NameNode
+25935 ResourceManager
 
 hadoop fs -mkdir /input
 
@@ -52,11 +52,10 @@ hadoop fs -put input.txt  /input
 
 hadoop jar target/WordCount-1.0-SNAPSHOT.jar org.sai.WC_Runner /input/input.txt /output
 
-
 localhost:8088
 part 00000
 
-hadoop fs -cat /output/part-000000
+hadoop fs -cat /output/part-00000
 ```
 
 <img width="1246" alt="Screenshot 2023-03-25 at 11 54 18 AM" src="https://user-images.githubusercontent.com/43849911/227700740-e526ac4c-4f43-4242-b5f7-b6f3c9aad715.png">
@@ -100,5 +99,23 @@ hdfs dfs -checksum /input/input.txt
 
 Installation
 https://www.youtube.com/watch?v=H999fIuymqc
+https://stackoverflow.com/questions/48978480/hadoop-permission-denied-publickey-password-keyboard-interactive-warning/49960886
+export HADOOP_SSH_OPTS="-p 22"
+
 
 <img width="651" alt="Screenshot 2023-03-25 at 12 24 42 PM" src="https://user-images.githubusercontent.com/43849911/227701988-7d45aa78-c2be-4b2b-952e-b543e66e2050.png">
+
+<img width="1335" alt="Screenshot 2023-03-25 at 12 32 05 PM" src="https://user-images.githubusercontent.com/43849911/227702369-203725a2-e67e-4864-9dbc-e18ec4342305.png">
+
+<img width="1788" alt="Screenshot 2023-03-25 at 12 32 41 PM" src="https://user-images.githubusercontent.com/43849911/227702395-6f54b10e-5860-45b7-a514-c5f7ec286a68.png">
+
+<img width="1248" alt="Screenshot 2023-03-25 at 12 35 00 PM" src="https://user-images.githubusercontent.com/43849911/227702500-ddd44319-1cf3-4782-b449-d149b03796e3.png">
+
+<img width="1788" alt="Screenshot 2023-03-25 at 12 35 50 PM" src="https://user-images.githubusercontent.com/43849911/227702535-4b1477f2-3bdc-4c95-8401-9737a80530d6.png">
+
+<img width="1788" alt="Screenshot 2023-03-25 at 12 36 02 PM" src="https://user-images.githubusercontent.com/43849911/227702544-7b18b608-077e-4c0b-b28a-1ac8bddb15b4.png">
+
+<img width="1783" alt="Screenshot 2023-03-25 at 12 36 30 PM" src="https://user-images.githubusercontent.com/43849911/227702564-72b28f27-61ba-41bf-b35b-aaeaf003b7f0.png">
+
+<img width="1248" alt="Screenshot 2023-03-25 at 12 37 18 PM" src="https://user-images.githubusercontent.com/43849911/227702581-20322164-d619-498c-a4e6-69f622322834.png">
+
