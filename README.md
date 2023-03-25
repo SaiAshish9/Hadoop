@@ -13,7 +13,9 @@ Compiled with protoc 3.7.1
 From source with checksum fb9dd8918a7b8a5b430d61af858f6ec
 This command was run using /usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/common/hadoop-common-3.3.4.jar
 
-sudo start-all.sh
+start-all.sh
+
+stop-all.sh
 
 https://towardsdatascience.com/installing-hadoop-on-a-mac-ec01c67b003c
 
