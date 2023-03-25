@@ -34,3 +34,36 @@ https://towardsdatascience.com/installing-hadoop-on-a-mac-ec01c67b003c
 
 <img width="1300" alt="Screenshot 2023-03-25 at 11 43 21 AM" src="https://user-images.githubusercontent.com/43849911/227700257-cdcb7f94-a5ca-431d-a0a1-d8a84aeecf6e.png">
 
+<img width="686" alt="Screenshot 2023-03-25 at 11 46 29 AM" src="https://user-images.githubusercontent.com/43849911/227700396-02f07f78-d964-4341-939f-d19a7afa7dc5.png">
+
+```
+jps
+12032 ResourceManager
+10177 
+16114 DataNode
+563 jenkins.war
+16006 NameNode
+22647 Jps
+22574 NodeManager
+
+hadoop fs -mkdir /input
+
+hadoop fs -put input.txt  /input
+
+hadoop jar target/WordCount-1.0-SNAPSHOT.jar org.sai.WC_Runner /input/input.txt /output
+
+
+localhost:8088
+part 00000
+
+hadoop fs -cat /output/part-000000
+```
+
+<img width="1246" alt="Screenshot 2023-03-25 at 11 54 18 AM" src="https://user-images.githubusercontent.com/43849911/227700740-e526ac4c-4f43-4242-b5f7-b6f3c9aad715.png">
+
+<img width="820" alt="Screenshot 2023-03-25 at 11 58 14 AM" src="https://user-images.githubusercontent.com/43849911/227700884-c634f163-ab9e-4adf-843b-ffb583e967c3.png">
+
+<img width="768" alt="Screenshot 2023-03-25 at 12 02 51 PM" src="https://user-images.githubusercontent.com/43849911/227701081-88a94d1f-d5ed-4911-b2ac-e58a99190ea4.png">
+
+
+
